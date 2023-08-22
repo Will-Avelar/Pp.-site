@@ -1,0 +1,967 @@
+<!doctype html>
+<!--[if IE 9]> <html class="no-js ie9 fixed-layout" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js " lang="PT-BR"> <!--<![endif]-->
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=d
+    evice-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Meta -->
+    <title>Petrópolis Pro</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/coroa_logo.webp" type="image/x-icon" style="width: 10px;" />
+    <link rel="apple-touch-icon" href="images/coroa_logo.webp" style="width: 10px;" >
+
+     <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+
+
+    <!-- Aviso de cookies -->
+    <style>
+        #aviso-cookies {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #585858;
+            padding: 10px;
+            text-align: center;
+            z-index: 9999
+        }
+
+        #aviso-cookies p {
+            margin: 0;
+            padding: 5px;
+            color: chartreuse;
+
+        }
+
+        #aceitar-cookies {
+            background-color: #000000;
+            border: none;
+            color: rgb(123, 255, 0);
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        /* Adicione as regras de mídia para tornar o aviso responsivo */
+        @media screen and (max-width: 600px) {
+            #aviso-cookies {
+                padding: 5px;
+                font-size: 12px;
+                z-index: 9999
+            }
+
+            #aviso-cookies p {
+                margin: 0 0 0 0%;
+                padding: 5px;
+            }
+
+            #aceitar-cookies {
+                padding: 6px 12px;
+                font-size: 10px;
+                margin: 0;
+
+
+            }
+        }
+    </style>
+<!--insider-->
+<style>
+    .news-container {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border: 1px solid #01bacf;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      margin: 22px;
+    }
+
+    .news-image {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+
+    .news-content {
+      font-size: 17px;
+      line-height: 1.5;
+      color: antiquewhite;
+    }
+
+  </style>
+
+<!--de contagem regressiva - lolas-->
+<script>
+    // Função para atualizar a contagem regressiva
+    function atualizarContagemRegressiva() {
+      // Obtém a data atual
+      var dataAtual = new Date();
+  
+      // Define a data alvo (23 de junho de 2023 às 00:00:00)
+      var dataAlvo = new Date(2023, 5, 23, 0, 0, 0);
+  
+      // Calcula a diferença entre a data alvo e a data atual em milissegundos
+      var diferenca = dataAlvo - dataAtual;
+  
+      // Calcula o tempo restante em dias, horas, minutos e segundos
+      var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+      var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+  
+      // Atualiza o elemento HTML com a contagem regressiva
+      document.getElementById("countdown").innerHTML =
+        "Faltam " +
+        dias +
+        " dias, " +
+        horas +
+        " horas, " +
+        minutos +
+        " minutos e " +
+        segundos +
+        " segundos";
+  
+      // Verifica se a data alvo já foi alcançada
+      if (diferenca < 0) {
+        document.getElementById("countdown").innerHTML = "";
+      }
+    }
+  
+    // Chama a função de atualização da contagem regressiva a cada segundo
+    setInterval(atualizarContagemRegressiva, 1000);
+  </script>
+<script>
+    // Função para atualizar a contagem regressiva
+    function atualizarContagemRegressiva() {
+      // Obtém a data atual
+      var dataAtual = new Date();
+  
+      // Define a data alvo (23 de junho de 2023 às 00:00:00)
+      var dataAlvo = new Date(2023, 5, 19, 0, 0, 0);
+  
+      // Calcula a diferença entre a data alvo e a data atual em milissegundos
+      var diferenca = dataAlvo - dataAtual;
+  
+      // Calcula o tempo restante em dias, horas, minutos e segundos
+      var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      var horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+      var segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+  
+      // Atualiza o elemento HTML com a contagem regressiva
+      document.getElementById("countdown").innerHTML =
+        "Faltam " +
+        dias +
+        " dias, " +
+        horas +
+        " horas, " +
+        minutos +
+        " minutos e " +
+        segundos +
+        " segundos";
+  
+      // Verifica se a data alvo já foi alcançada
+      if (diferenca < 0) {
+        document.getElementById("countdown").innerHTML = "";
+      }
+    }
+  
+    // Chama a função de atualização da contagem regressiva a cada segundo
+    setInterval(atualizarContagemRegressiva, 1000);
+  </script>
+      <!--fim-->
+
+
+</head>
+
+<!-- NÃO PRECISA MEXER NESTA SESSÃO-->
+
+<body class="left-menu">
+    <div class="menu-wrapper">
+        <div class="mobile-menu">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <!--NÃO MEXER-->
+                        <!--esse button cria os 3 traços no mobile-->
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Menu Navegação</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/coroa_logo.webp" style="width: 50px;"
+                                alt="logo marca coroa"></a>
+
+                    </div>
+                    <!--END-->
+
+
+                    <!--INICIO DA SESSÃO MENU EM MODO MOBILE-->
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Home</span></a>
+
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Arte & Cultura <span
+                                        class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <li><a href="Portfolios/KaiserStadt/single.html" style="font-size: 20px;"> <span style="color: #01bacf;">Dança </span> | Kaiserstadt Kulturkreis</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <li><a href="Portfolios/Foks/single.html" style="font-size:20px;"> <span style="color: #01bacf;">Grafite</span> | André Theisen (Foks)</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <li><a href="Portfolios/Casa_Cafe_studeo_music/index.html"style="font-size: 20px;"><span style="color: #01bacf;">Música</span> | Vitória Gasparini</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Comércio Local <span
+                                        class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <li><a href="Portfolios/Casa_Cafe_studeo_music/index.html"style="font-size: 20px;"><span style="color: #01bacf;">Cafeteria</span> | Casa Café</a>
+                                            </li>
+                                        
+                                            <li><a href="Portfolios/gabrieldocombin/index.html"style="font-size: 20px;"><span style="color: #01bacf;">Bebidas</span> | Gabriel do Combin</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Festas | Eventos <span
+                                        class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <li><a href="Portfolios/Lolas/single.html"style="font-size: 20px;" ><span style="color: #01bacf;">Open Bar</span> | Lola's Open Bar</a></li>
+                                            <li><a href="Portfolios/Brunao_photo/index-color.html" style="font-size: 20px;" ><span style="color: #01bacf;">Fotografia</span> |  Bruno Patrício</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Saúde | Beleza <span
+                                        class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <li><a href="#"></a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Profissionais Autônomos <span
+                                        class="fa fa-angle-down"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <ul class="dropdown-submenu">
+                                            <p style="color: rgb(255, 46, 46);" >Na Petrópolis Pro, atuamos exclusivamente como uma plataforma de divulgação de serviços profissionais e não assumimos qualquer responsabilidade em relação às contratações e serviços. Nossa colaboração consiste em ajudar os profissionais a promoverem seus contatos por meio de nossas páginas.</p>
+                                            <br>
+                                         <h4 style="color:#cfcfcf" >Calafate</h4>
+                                            <img src="images/Cartoes_visita/IMG_0175.webp" style="width: 150px;" />
+                                                <li><a href="https://wa.me/+5524988036046?text=" style="color:#01bacf; ">Contato: Fabrício</a></li><br>
+                                                <h4 style="color:#cfcfcf" >Pintor</h4> 
+                                                <img src="images/Cartoes_visita/pintor.webp" style="width: 150px;" />
+                                                <li><a href="https://wa.me/+5524988026127?text=" style="color:#01bacf;">Contato: Francisco</a></li><br>
+                                                <h4 style="color:#cfcfcf">Jardinagem e capina</h4> 
+                                                <img src="images/Cartoes_visita/marquinho.webp" style="width: 150px;" />
+                                                <li><a href="https://wa.me/+5524998311701?text=" style="color:#01bacf;">Contato: Marquinho</a></li><br>
+
+                                           </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+                            
+                        </ul>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- FIM DA SESSÃO MENU MOBILE-->
+
+
+
+        <!-- INICIO DA SESSÃO MENU VERTICAL MODO PC  -->
+        <header class="vertical-header">
+            <div class="vertical-header-wrapper">
+                <nav class="nav-menu">
+                    <div class="logo"><!-- LOGO LATERAL DO MENU  -->
+                        <a href="index.html"><img src="images/Logo Oficial.webp" style="width: 100px;"
+                                alt="coroa de uma rei "></a>
+
+                    </div>
+
+                    <div class="margin-block"></div>
+                    <ul class="primary-menu">
+                        <li><a href="index.html">Home</i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu"><a href="#">Arte & Cultura <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="#">Grupos Folcloricos <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <li><a href="Portfolios/KaiserStadt/single.html">Kaiserstadt
+                                                        Kulturkreis</a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Grafitte<i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+
+                                                <li><a href="Portfolios/Foks/single.html">Andre Theisen (Foks)</a></li>
+
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    
+                                    <li><a href="#">Música<i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <li><a href="Portfolios/Casa_Cafe_studeo_music/index.html">Vinida Music
+                                                        Studio </a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu"><a href="#">Comércio Local<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="Portfolios/Casa_Cafe_studeo_music/index.html">Casa Café</a></li>
+                                    <li><a href="Portfolios/Casa_Cafe_studeo_music/index.html">Vinida Music Studio</a>
+                                    <li><a href="Portfolios/gabrieldocombin/index.html">Gabriel do Combin</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="child-menu"><a href="#">Saúde e Beleza <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="#">Nutricionista<i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!--          <li><a href="#">Larissa</a></li>-->
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Personal <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!--<li><a href="#">Adriano</a></li>-->
+
+
+                                            </ul>
+                                        </div>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <div class="subsub-menu-wrapper">
+                            <ul class="subsub-menu center-content">
+                                <!-- <li><a href="#">felipe</a></li>-->
+
+                            </ul>
+                        </div>
+                        </li>
+                        <li class="child-menu"><a href="#">Festas e Eventos<i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="Portfolios/Lolas/single.html">Lolas Open Bar</a></li>
+                                    <li><a href="Portfolios/Brunao_photo/index-color.html">Bruno Patrício | Fotografia</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="child-menu"><a href="#">Prof. Autônomos <i class="fa fa-angle-right"></i></a>
+                            <div class="sub-menu-wrapper">
+                                <ul class="sub-menu center-content">
+                                    <li><a href="#">Pintor <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <img src="images/Cartoes_visita/pintor.webp" style="width: 150px;" />
+                                                <li><a href="https://wa.me/+5524988026127?text=" style="color:#01bacf;">Contato: Francisco</a></li><br>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Jardineiro<i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <img src="images/Cartoes_visita/marquinho.webp" style="width: 150px;" />
+                                                <li><a href="https://wa.me/+5524998311701?text=" style="color:#01bacf;">Contato: Marquinho</a></li><br>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Pedreiro <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!--  <li><a href="#">Menu Example 01</a></li>-->
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Contador <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!--<li><a href="#">Luis Claudio Matos Ribeiro </a></li>-->
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">TI <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!--<li><a href="#">Will Avelar </a></li>-->
+
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Bombeiro Hidráulico <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!-- <li><a href="#">Mãozinha </a></li>-->
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Eletricista <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <!--<li><a href="#">felipe</a></li>-->
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Calafate <i class="fa fa-angle-right"></i></a>
+                                        <div class="subsub-menu-wrapper">
+                                            <ul class="subsub-menu center-content">
+                                                <img src="images/Cartoes_visita/IMG_0175.webp" style="width: 200px;" />
+                                                <li><a href="https://wa.me/+5524988036046?text=">Contato: Fabrício</a></li>
+
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                   
+        </header>
+        <!-- FIM DA SESSÃO MENU LATERAL  -->
+    </div>
+
+    <!--background principal -->
+    <div id="wrapper">
+        <!-- end row -->
+
+
+        <!--TEXTO DE APRESENTAÇÃO -->
+        <div class="section bgcolor noover">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tagline-message">
+                            <h1 style=" margin-top: -8%; color: aliceblue; font-family: 'Times New Roman', Times, serif; font-size: 45px;" >Petrópolis Pro</h1> <br><h3 style="  color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif; font-size: 30px;">O lugar onde os profissionais se encontram e brilham juntos no mundo digital!</h3>
+                         </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div>
+        </div>
+        <!-- FIM DO CONTEINER -->
+
+        <!-- insider -->
+           <!--<p style="color: #01bacf;">Última Atualização 13.06.2023 </p>-->
+         
+           <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/kaiserbauern.webp" alt="img grupo no pauco" />
+              <div class="news-content">
+                <h4 style="color: #01bacf;">34º Bauernfest</h4>
+                <a href="Portfolios/KaiserStadt/index.html">Kaiserstadt Kulturkreis</a>
+                <p>Que parceria linda!</p>
+                <p>A Petrópolis Pro está extremamente orgulhosa por ter o Kaiserstadt, um grupo de dança folclórica alemã, como parceiro. O Kaiserstadt Kulturkreis participou com seu elenco no 34º Bauernfest, a Festa do Colono Alemão em Petrópolis, e realizou apresentações incríveis com seus mais de 50 integrantes. Nossa página parabeniza o Kaiserstadt e todos os grupos folclóricos que tornam essa festa a maior celebração cultural em nossa cidade. Não podemos deixar de parabenizar todos os trabalhadores diretos e indiretos que fizeram essa mágica acontecer.</p>
+                </div>
+            </div>
+          </div>
+          
+        <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/d3.webp" alt="imagem drink" />
+              <div class="news-content">
+                <h4 style="color: #01bacf;">Workshop Lola's Open Bar</h4>
+                <a href="Portfolios/Curso_Lolas/index.html">INSCREVA-SE AQUI</a>
+                <p>Aprenda coquetelaria com Lola's Open Bar em Petrópolis! Cursos grátis para ser um bartender de destaque. Aprenda com especialistas, crie coquetéis deliciosos, descubra tendências em ambiente divertido. Vagas limitadas, inscreva-se! Lola's Open Bar - Sabor, habilidade e paixão pela coquetelaria.</p>
+                <p>Estamos em contagem regressíva.</p>
+                <p id="countdown"></p>
+              </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/Bau.webp" alt="imagem grupo folclórico" />
+              <div class="news-content">
+                <h4 style="color: #01bacf;">34° edição da Bauernfest </h4>
+                <a href="https://www.instagram.com/explore/tags/bauernfest2023/">#bauernfest2023</a>
+                <p>Estamos em contagem regressíva.</p>
+               <p id="countdown"></p>
+              </div>
+            </div>
+          </div>
+           <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/kaiser.webp" alt="imagem grupo folclorico"/>
+              <div class="news-content">
+                <h4 style="color: #01bacf;">Kaiserstadt Kulturkreis</h4>
+                <a href="https://www.petropolispro.top/Portfolios/KaiserStadt/single.html">#Portfólio</a>
+                <a href="https://www.instagram.com/kaiser_kult/">@kaiser_kult</a>
+                <p>Grupo de Danças Germânicas</p>
+                <p>Confira lá no instagran do @kaiser_kult a programação de suas apresentações na 34° edição da Bauernfest </p>
+               </div>
+            </div>
+          </div>
+        <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/combim.webp" alt="logo do gabrieldocombin"/>
+              <div class="news-content">
+                <h4 style="color: #01bacf;">Resenha Garantida</h4>
+                <a href="https://petropolispro.top/Portfolios/gabrieldocombin/index.html">#Portfólio</a>
+                <a href="https://www.instagram.com/gabrieldocombin/">@gabrieldocombin</a>
+                <p>Confira todos os Combos no Portfólio do Gabriel do Combin.</p>
+               </div>
+            </div>
+          </div>
+
+        <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/cafe1.webp" alt="imagem logo da cafeteria"/>
+              <div class="news-content">
+                <h4 style="color: #01bacf;">Casa Café Studio Music</h4>
+                <a href="https://www.petropolispro.top/Portfolios/Casa_Cafe_studeo_music/index.html">#Portfólio</a>
+                <a href="https://www.instagram.com/casacafecafestudio/">@casacafecafestudio</a>
+                <p>Casa Café e Vinida Music Studio em Petrópolis/RJ combina café e música. Mãe e filha criaram um local para desfrutar de café, petiscos e produtos artesanais. Possui estúdio musical no segundo piso, preparado pela Professora Vitória Gasparini.</p>
+            </div>
+            </div>
+          </div>
+          <div class="container last-container">
+        <div class="container">
+            <div class="news-container">
+              <img class="news-image" src="images/News/foxs.webp" alt="grafite" />
+              <div class="news-content">
+                <h4 style="color: #01bacf;">Grafite Urbano</h4>
+                <a href="https://www.petropolispro.top/Portfolios/Foks/single.html">#Portfólio</a>
+                <a href="https://www.instagram.com/andre_theisen/">@andre_theisen</a>
+                <p>Descubra o incrível grafite de um dos melhores artistas do Rio de Janeiro! Veja suas obras de arte no Instagram e em nosso site, na seção Arte & Cultura. Cores vibrantes e expressão autêntica definem seu trabalho. Não perca a chance de explorar sua arte única e se inspirar!</p>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!-- FIM insider -->
+
+        <!--FOTO DA MARCA DO CLIENTE LINKADO NO PORTOLIO-->
+        <section class="section">
+            <div class="container">
+                <div class="section-title text-center">
+                    <p style="color: black; font-family: 'Times New Roman', Times, serif;  font-size: 200%;; ">O que você está esperando para se juntar a nós?</p>
+                </div><!-- end title -->
+
+                <div id="owl-01" class="owl-carousel owl-theme owl-theme-01">
+
+                    <div class="item">
+                        <img src="images/LMk_clientes/combim.webp" style="width: 200px; margin: 0 0 0 65px;" alt="imagem logo marca gabriel do combim" class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="@gabrieldocombin">@gabrieldocombin</a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="images/LMk_clientes/combim.webp"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Portfolios/Lolas/images/lolas.webp"  style="width: 200px; margin: 0 0 0 65px;"alt="imagem logo marca lolas open bar"
+                            class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="https://www.instagram.com/lolasopenbar/">@lolasopenbar </a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="Portfolios/Lolas/single.html"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/LMk_clientes/kaiser.webp" style="width: 200px; margin: 0 0 0 65px;"alt="imagem logo marca kaiserstadt" class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="https://www.instagram.com/kaiser_kult/">@kaiser_kult </a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="Portfolios/KaiserStadt/single.html"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/LMk_clientes/CAFELOGO.webp" style="width: 200px; margin: 0 0 0 65px;"alt="cafe da sol " class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="https://www.instagram.com/casacafecafestudio/"> @Casa_Cafe_studeo_music</a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="Portfolios/Casa_Cafe_studeo_music/index.html"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/LMk_clientes/VINIDALOGO.webp"style="width: 200px; margin: 0 0 0 65px;" alt="LOGO VINIDA STUDIO MUSIC" class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="https://www.instagram.com/casacafecafestudio/">@vinidamusicstudio</a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="Portfolios/Casa_Cafe_studeo_music/index.html"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/LMk_clientes/68.webp" style="width: 200px; margin: 0 0 0 65px;"alt="Bruno Fotografo" class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="Portfolios/Brunao_photo/index-color.html">@brunopatriciofotografia</a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="Portfolios/Brunao_photo/index-color.html"><i
+                                        class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="images/upload/desc_work_02 - 800x600.webp"style="width: 200px; margin: 0 0 0 65px;" alt="" class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="https://www.instagram.com/brunopatriciofotografia/">NOME DA SUA EMPRESA </a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="https://www.instagram.com/brunopatriciofotografia/"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="Portfolios/Foks/images/logos/atheisen.webp" style="width: 200px; margin: 0 0 0 65px;"alt="imagem de uma logo marca"
+                            class="img-responsive">
+                        <div class="magnifier">
+                            <div class="magni-desc">
+                                <h4>
+                                    <a href="https://www.instagram.com/avelartheisen.arq/">Avelar_Theisen -
+                                        Arquitetura</a>
+                                    <small>in: Portfólio</small>
+                                </h4>
+                                <a class="goitem" href="https://www.instagram.com/andre_theisen/"><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIM DA SESSÃO  -->
+
+
+        <!--O QUE IREMOS OFERECER - ESTA SESSÃO NAO PRECISA MEXER MUITO-->
+        <section class="section parallax" data-stellar-background-ratio="0.6"
+            style="background-image:url('images/Background.webp'); background-position: 1% 199.878px;">
+            <div class="container">
+                <div class="section-title light-color text-center">
+                </div><!-- end title -->
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-box">
+                            <div class="process-front text-center">
+                                <img src="images/instagram.webp" alt="logo marca instagram">
+                                <h3>Instagram</h3>
+                            </div><!-- end front -->
+                            <div class="process-end text-center">
+                                <p>Publicaremos em nossa principal rede social o seu negócio</p>
+                            </div><!-- end end -->
+                        </div><!-- end process -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-box">
+                            <div class="process-front text-center">
+                                <img src="images/portfolio.webp" alt="portfolio">
+                                <h3>Portfólio</h3>
+                            </div><!-- end front -->
+
+                            <div class="process-end text-center">
+
+                                <p>Você terá um lindo Portfólio online com a cara do seu negócio </p>
+                            </div><!-- end end -->
+                        </div><!-- end process -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-box">
+                            <div class="process-front text-center">
+                                <img src="images/publico-alvo.webp" alt="publico alvo">
+                                <h3>Resultados</h3>
+                            </div><!-- end front -->
+
+                            <div class="process-end text-center">
+
+                                <p>Iremos te ajudar a aparecer para o seu público alvo</p>
+                            </div><!-- end end -->
+                        </div><!-- end process -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-box">
+                            <div class="process-front text-center">
+                                <img src="images/trabalho-em-equipe.webp" alt="tranalho em equipe">
+                                <h3>Juntos</h3>
+                            </div><!-- end front -->
+                            <div class="process-end text-center">
+                                <p>Juntos iremos alcançar os seus objetivos.</p>
+                            </div><!-- end end -->
+                        </div><!-- end process -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section>
+        <!-- FIM DA SESSÃO-->
+
+
+        <!--SESSÃO PRONTA NÃO PRECISA MEXER -->
+        <footer class="section footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4">
+                        <div class="widget clearfix">
+                            <div class="list-widget">
+                                <div>
+                                    <img class="logo_fim" src="images/Logo Oficial.webp"
+                                        style="width: 100px; margin: 0 0 0 35%;" alt="imagem logo marca">
+                                
+                                        <div class="margin-block"></div>
+                                        <div class="margin-block"></div>
+                                        <div class="menu-social">
+                                            <ul class="list-inline text-center">
+                                                <!--  <li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                                <li><a href="https://www.instagram.com/petropolispro/"><i class="fa fa-instagram"></i></a> </li>
+                                                <li><a href="https://www.youtube.com/channel/UC9TwOwx13uqU4bnaLR8Zuvg"><i class="fa fa-youtube"></i></a> </li>
+                                                <li><a href="#"><i class="fa fa-facebook"></i></a> </li>
+                                               
+                                            </ul>
+                                        </div>
+                                    </nav>
+                                </div>
+                                    </div><!-- end list-widget -->
+                            </div><!-- end widget -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div><!-- end container -->
+<!--FORMULARIO-->
+<div class="container">
+    <h2 style="color:#8a8a8a">Contato</h2><br>
+    <form>
+        <div class="form-group">
+            <label for="nome" style="color:#01bacf">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="text" required oninput="atualizarTexto('nome')">
+        </div>
+        <div class="form-group">
+            <label for="endereco" style="color:#01bacf">e-mail:</label>
+            <input type="text" class="form-control" id="endereco" name="text" required oninput="atualizarTexto('endereco')">
+        </div>
+        <div class="form-group">
+            <label for="mensagem" style="color:#01bacf">Mensagem:</label>
+            <textarea class="form-control" id="mensagem" name="text" required oninput="atualizarTexto('mensagem')"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="enviarMensagem()">Enviar Mensagem</button>
+    </form>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    function enviarMensagem() {
+        var nome = document.querySelector("#nome").value;
+        var endereco = document.querySelector("#endereco").value;
+        var mensagem = document.querySelector("#mensagem").value;
+        var link = "https://wa.me/+5524988296985?text=" + encodeURIComponent("Nome: " + nome + "\nEndereço: " + endereco + "\n\n" + mensagem);
+        window.location.href = link;
+    }
+    
+    function atualizarTexto(id) {
+        var campo = document.querySelector("#" + id);
+        var valor = campo.value;
+        campo.style.color = "#000000"; // Define a cor do texto como preto
+        campo.value = valor; // Atualiza o conteúdo do campo para refletir o texto digitado
+    }
+</script>
+<!-- fim FORMULARIO-->
+
+        </footer><!-- end footer -->
+
+
+        <!--O QUE IREMOS OFERECER - ESTA SESSÃO NAO PRECISA MEXER MUITO-->
+        <div class="section copyrights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <a href="quem_somos.html">Quem somos</a><br>
+                        <a href="mailto:petropolis@petropolispro.top">Fale Conosco</a><br>
+                        <a href="Politica_de_privacidade.html"> Política de Privacidade<br></a>
+                        <a href="Termo-de-Uso.html">Termo de Uso</a>
+                    </div>
+                    <div class="col-lg-9 col-md-9 text-right">
+                        <div class="cop-links">
+                            <ul class="list-inline">
+                                <li>&copy; 2023 Will Avelar | Design: <a href="https://html.design">HTML Design</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIM-->
+
+            <!-- jQuery Files -->
+
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/carousel.js"></script>
+            <script src="js/parallax.js"></script>
+            <script src="js/rotate.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="js/masonry.js"></script>
+            <script src="js/masonry-4-col.js"></script>
+            <!-- -->
+
+            <!--AVISO DE COKKIES-->
+            <script>
+                // Função para ocultar o aviso de cookies
+                function ocultarAvisoCookies() {
+                    var aviso = document.getElementById("aviso-cookies");
+                    aviso.style.display = "none";
+                    // Armazena um cookie para lembrar que o aviso foi aceito
+                    document.cookie = "avisoCookies=aceito; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+                }
+
+                // Função para verificar se o aviso de cookies já foi aceito
+                function verificarAvisoCookies() {
+                    var cookies = document.cookie.split(";");
+                    for (var i = 0; i < cookies.length; i++) {
+                        var cookie = cookies[i].trim();
+                        if (cookie.indexOf("avisoCookies=") === 0) {
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+
+                // Verifica se o aviso de cookies já foi aceito e oculta se necessário
+                window.onload = function () {
+                    if (verificarAvisoCookies()) {
+                        ocultarAvisoCookies();
+                    }
+                };
+            </script>
+            <div id="aviso-cookies">
+                <p>Este site utiliza cookies para melhorar a sua experiência. Ao continuar navegando, você concorda com
+                    o uso de cookies.</p>
+                <button id="aceitar-cookies" onclick="ocultarAvisoCookies()">Aceitar</button>
+            </div>
+            
+            <!--fim-->
+        
+</body>
+
+</html>
